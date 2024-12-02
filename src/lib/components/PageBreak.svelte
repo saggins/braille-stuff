@@ -1,0 +1,7 @@
+
+<div class=pagebreak></div>
+<style>
+    @media print {
+        .pagebreak { page-break-before: always; } /* page-break-after works, as well */
+    }
+</style>
