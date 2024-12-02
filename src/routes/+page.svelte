@@ -1,7 +1,6 @@
 
 <script lang=ts>
     import HalfCircle from '$lib/components/HalfCircle.svelte';
-import PageBreak from '$lib/components/PageBreak.svelte'
 	import ThickLine from '$lib/components/ThickLine.svelte';
 	import ToBraile from '$lib/components/ToBraile.svelte';
 
@@ -9,6 +8,7 @@ import PageBreak from '$lib/components/PageBreak.svelte'
 </script>
 
 <textarea bind:value={text}/>
+<button on:click={ ()=> window.print()}> print me</button>
 
 
 <h2>Test Ballot</h2>
