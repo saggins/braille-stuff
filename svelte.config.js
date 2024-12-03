@@ -1,3 +1,4 @@
+import adapter from '@sveltejs/adapter-static'
 const config = {
     kit: {
         adapter: adapter({
@@ -6,12 +7,10 @@ const config = {
             fallback: null,
             precompress: false
         }),
-        prerender: {
-            default: true,
-        },
-        trailingSlash: 'always',
         paths: {
             base: process.env.BASE_PATH
         }
     }
 };
+
+export default config;
